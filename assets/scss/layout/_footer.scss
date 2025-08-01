@@ -1,0 +1,31 @@
+.register {
+  background-color: $primary-200;
+}
+.paragraph-sm {
+  font-size: 14px;
+}
+footer{
+    text-align: center;
+    font-weight: 400;
+    color: $neutral-600;
+    background-color: $neutral-100;
+}
+@media (max-width: 767px) {
+   footer nav{
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 0;
+   }
+   footer nav ul{
+    flex-direction: column;
+    align-items: flex-start;
+   }
+   footer nav a{
+    margin: 0;
+    align-self: flex-start;
+   }
+   footer nav ul li a{
+    margin: 0;
+    align-self: flex-start;
+   } 
+}

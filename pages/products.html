@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <title>產品詳情頁</title>
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+     <main class="container product-detail d-flex">
+        <div class="row py-64 flex-md-column">
+            <!-- 左邊鞋子圖片 -->
+            <div class="col-7 col-md-7" >
+                <div class="row product-row">
+                    <div class="col-6 px-4 mb-8 col-md-7 mb-md-24">
+                        <img src="../assets/images/products/1.png" alt="">
+                    </div>
+                    <div class="col-6 px-4 mb-8 d-md-none">
+                        <img src="../assets/images/products/2.png" alt="">
+                    </div>
+                    <div class="col-6 px-4 mb-8 d-md-none">
+                        <img src="../assets/images/products/3.png" alt="">
+                    </div>
+                    <div class="col-6 px-4 mb-8 d-md-none">
+                        <img src="../assets/images/products/4.png" alt="">
+                    </div>
+                    <div class="col-6 px-4 mb-8 d-md-none">
+                        <img src="../assets/images/products/5.png" alt="">
+                    </div>
+                    <div class="col-6 px-4 mb-8 d-md-none">
+                        <img src="../assets/images/products/6.png" alt="">
+                    </div>
+                    <div class="col-6 px-4 mb-8 d-md-none">
+                        <img src="../assets/images/products/7.png" alt="">
+                    </div>
+                    <div class="col-6 px-4 d-md-none">
+                        <img src="../assets/images/products/8.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <!-- 右邊 -->
+            <div class="col-5 px-12 col-md-4 px-md-12">
+                <!-- 小導覽列 -->
+                <nav class="mb-12 mb-md-8">
+                    <ol class="d-flex textp-m label-sm">
+                        <li class="breadcrumb-item"><a href="../pages/index.html" class="gary">首頁</a></li>
+                        <li class="breadcrumb-item"><a href="#" class="gary">女鞋</a></li>
+                        <li class="breadcrumb-item"><a href="#" class="gary">滑板鞋</a></li>
+                        <li class="breadcrumb-item"><a href="#">Platform 404</a></li>
+                    </ol>
+                </nav>
+                <!-- 標題 價格 簡介 -->
+               <div class="pb-32">
+                    <h2 class="pb-16 h4-md pb-md-12">Platform 404</h2>
+                    <div class="d-flex align-items-center pb-md-12">
+                        <h5 class="green pb-16 h6-md">NT$2,600<del class="ps-8 textp-s pb-16">NT$3,200</del></h5>
+                    </div>
+                    <p class="pb-12 textp-m">Platform 404 以柔和奶白為底，搭配深藍色皮革點綴，走在街上自帶回頭率。鞋型採用復古運動風輪廓，結合輕量厚底與柔軟泡棉鞋舌，兼顧美感與舒適。
+                    </p>
+                    <p class="textp-m">
+                        鞋身選用柔軟皮革材質，打造出清新卻不失個性的氛圍，並以鞋面透氣孔設計提升穿著體驗，兼顧質感與舒適度，適合日常長時間著用。無論是街頭穿搭、日常通勤或週末出遊都能輕鬆駕馭。</p>
+                </div>
+                <!-- 產品 顏色-->
+                <div class="pb-32">
+                    <p class="textp-m pb-8">顏色</p>
+                    <ul class="d-flex color">
+                        <li class="pe-8">
+                            <img class="pb-4" src="../assets/images/product/1.png" alt="">
+                            <p>藍色</p>
+                        </li>
+                        <li>
+                            <img class="pb-4" src="../assets/images/product/2.png" alt="">
+                            <p>卡其色</p>
+                        </li>
+                    </ul>
+                </div>                
+                <div class="pb-48">
+                    <!-- 產品 尺寸 -->
+                    <p class="textp-m pb-8">尺寸</p>
+                    <div class="d-flex f-w textp-m gap-8 pb-8">
+                        <button type="button" class="btn btnProductSize click">35(22.5cm)
+                        </button>
+                        <button type="button" class="btn btnProductSize">36(23.0cm)
+                        </button>
+                        <button type="button" class="btn btnProductSize">37(23.5cm)
+                        </button>
+                        <button type="button" class="btn btnProductSize">38(24.0cm)
+                        </button>
+                        <button type="button" class="btn btnProductSize">39(24.5cm)
+                        </button>
+                        <button type="button" class="btn btnProductSize">40(25.0cm)
+                        </button>
+                        <button type="button" class="btn btnProductSize">41(26.0cm)
+                        </button>
+                        <button type="button" class="btn btnProductSize" disabled>42(26.5cm)
+                        </button>
+                        <button type="button" class="btn btnProductSize" disabled>43(27.0cm)
+                        </button>
+                    </di>
+                    <p class="textp-s remain">僅剩 3 雙</p>
+                </div>
+                <!-- 收藏 預約 -->
+                <div class="d-flex gap-8 pb-32">
+                  <button type="button" class="btn btn-white d-md-none"><i class="bi bi-heart pr-8"></i>加入收藏</button>
+                    <button type="button" class="btn btn-black"><i class="bi bi-handbag pr-8"></i>門市預約試穿</button>
+                    <button class=" d-none btnIcon d-md-block"><i class="bi bi-heart pr-8"></i></button>
+                </div>
+                <!-- 商品材質 購買 保養 -->
+                <div>
+                    <ul class="exhaustive">
+                        <li class="py-12">
+                            <p class="pb-4">商品材質</p>
+                            <p class="textp-s">鞋面：合成皮革（Synthetic Leather）</p>
+                            <p class="textp-s">內裡：透氣網布材質，提升舒適與排汗性</p>
+                            <p class="textp-s">鞋底：EVA 輕量發泡橡膠，具備良好緩震與止滑效果</p>
+                            <p class="textp-s">鞋帶：聚酯纖維，耐拉扯不易鬆脫</p>
+                        </li>
+                        <li class="py-12">
+                            <p class="pb-4">購買須知</p>
+                            <p class="textp-s">商品顏色因螢幕顯示可能略有差異，請以實品為準。</p>
+                            <p class="textp-s">建議首次穿著前試穿確認尺寸，避免影響退換貨權益。</p>
+                            <p class="textp-s">本商品為限量發售，庫存有限，如需更換尺寸請儘早聯繫客服協助處理。</p>
+                        </li>
+                        <li class="py-12">
+                            <p class="pb-4">保養方式</p>
+                            <p class="textp-s">建議以乾布或微濕軟布擦拭表面汙漬，避免機洗或長時間浸水。</p>
+                            <p class="textp-s">收納時請放置於乾燥通風處，避免日曬及高溫導致變形或龜裂。</p>
+                            <p class="textp-s">若需深層清潔，建議使用中性清潔劑並搭配柔刷輕刷，勿使用漂白水或強酸強鹼清潔劑。</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- 你可能也喜歡 -->
+            <div class="py-48 py-md-40">
+                <h4 class="pb-16 h5-md">你可能也喜歡...</h4>
+                <ul class="d-flex">
+                    <li class="pe-24">
+                        <img class="pb-12" src="../assets/images/products/9.png" alt="">
+                        <h6>VM001</h6>
+                        <p class="textp-m">NT$2,600</p>
+                    </li>
+                    <li class="pe-24">
+                        <img class="pb-12" src="../assets/images/products/10.png" alt="">
+                        <h6>Melty Kiss</h6>
+                        <p class="textp-m">NT$4,000</p>
+                    </li>
+                    <li class="pe-24">
+                        <img class="pb-12" src="../assets/images/products/11.png" alt="">
+                        <h6>BOOMBLOK</h6>
+                        <p class="textp-m">NT$3,200</p>
+                    </li>
+                    <li>
+                        <img class="pb-12" src="../assets/images/products/12.png" alt="">
+                        <h6>Sugar Snap</h6>
+                        <p class="textp-m">NT$3,200</p>
+                    </li>
+                </ul>
+            </div>
+    </main>
+    <%- include('./layout/footer'); -%>
+
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>

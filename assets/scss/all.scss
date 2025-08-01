@@ -1,0 +1,29 @@
+// 統一管理 SCSS檔 先後順序很重要
+/* 字體 */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap");
+// 變數、通用樣式
+@import "./helper/variables";
+@import "./helper/utils";
+@import "./helper/spacing";
+
+// 第三方套件
+// @import "./vendors/bootstrap";
+
+//base 標籤基礎樣式
+@import "./base/reset";
+@import "./base/base";
+
+
+// components 元件通用樣式
+@import "./components/button";
+@import "./components/breadcrumb.scss";
+
+// layout
+@import "./layout/header";
+@import "./layout/footer";
+
+//pages
+@import "./pages/story";
+@import "./pages/product";
+@import "./pages/products";
+@import "./pages/index";

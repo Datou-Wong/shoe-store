@@ -1,0 +1,33 @@
+.productNav ul li a{
+    letter-spacing: 0;
+}
+.productNav ol li a{
+    letter-spacing: 0;
+}
+.productNav a i{
+    padding: 12px;
+} 
+
+.allPro ul li{
+    padding-bottom: 20px;
+}
+.allPro ul li a{
+    padding: 8px 0;
+}
+.product-list p{
+    font-weight: 500;
+}
+.product-list a{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.page .btn{
+    padding: 8px 15px;
+    border-radius: 0;
+    font-weight: 400;
+}
+.page .page-else{
+    background-color: $primary-300;
+    font-weight: 500;
+} 

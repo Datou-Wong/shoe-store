@@ -1,0 +1,75 @@
+.storyHeader{
+    color: white;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url(https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week1/hero.png?raw=true );
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 151px 0;
+}
+@media (max-width: 767px) {
+   .storyHeader{
+    padding: 87px 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url(../images/story/hero-sm.png);
+   }
+}
+
+.storyHeader div{
+     padding: 151px 0;
+     margin: 0 auto;
+     max-width: 100%;
+}
+@media (max-width: 767px) {
+   .storyHeader div{
+    padding: 0;
+   }
+}
+
+.storyText{
+    background-color: $primary-100;
+    text-align: center;
+}
+.storyImg{
+    max-width: 100%;
+    display: block;
+    height: auto;
+}
+.disc{
+    list-style: disc;
+}
+.story ul li a{
+    color: $primary-400;
+    border-bottom: 1px $primary-400 solid;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 500;
+}
+.story ul li a:hover{
+    color: $neutral-900;
+}
+.icon{
+    padding-right: 10px;
+    color: $primary-400;
+}
+.storyH5{
+    color: $primary-400;
+}
+.bor-b{
+    border-bottom: 1px solid $neutral-300;
+}
+.course .bor-l{
+    border-left: 1px solid $neutral-900 ;
+    padding-left: 8px;
+}
+.idea .bor-l{
+    border-left: 3px solid $neutral-300 ;
+    padding-left: 12px;
+}
+.bor-t{
+    border-top: 1px solid $neutral-300;
+}
+@media (max-width: 767px) {
+   .storyText{
+    text-align: left
+   }
+}
