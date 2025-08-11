@@ -51,6 +51,9 @@
 .exhaustive li {
   border-bottom: 1px solid $neutral-300;
 }
+love{
+  width: 100%;
+}
 @media (max-width: 767px) {
   .col-md-7 {
     width: 100%;
@@ -63,11 +66,13 @@
   }
   .love-md-row {
     flex-wrap: nowrap;
+
     margin-left: -8px;
     margin-right: -8px;
   }
 
    .love-md-col {
+
     min-width: 316px;
     padding-left: 8px;
     padding-right: 8px;
