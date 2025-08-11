@@ -32,7 +32,7 @@
 
 .tw-pra-md {
   line-height: 1.5;
-  letter-spacing: 5%;
+  letter-spacing: 0.05em;
 }
 
 .textp-page {
@@ -45,14 +45,14 @@
   font-weight: 700;
   font-size: 64px;
   line-height: 1.2;
-  letter-spacing: 5%;
+  letter-spacing: 0.05em;
 }
 
 .textDisplay2 {
   font-size: 48px;
   font-weight: 700;
   line-height: 1.2;
-  letter-spacing: 5%;
+  letter-spacing: 0.05em;
 }
 
 @media (max-width: 767px) {
@@ -60,12 +60,11 @@
     font-size: 48px;
     font-weight: 700;
     line-height: 1.2;
-    letter-spacing: 5%;
-
-    .textParagraph-md{
-      font-size: 16px;
-      line-height: 1.5;
-    }
+    letter-spacing: 0.05em;
+  }
+  .textParagraph-md {
+    font-size: 16px;
+    line-height: 1.5;
   }
 }
 
@@ -125,10 +124,10 @@
   .justify-content-md-center {
     justify-content: center;
   }
-  .flex-md-column{
+  .flex-md-column {
     flex-direction: column;
   }
-  .overflow-x-md-auto{
+  .overflow-x-md-auto {
     overflow-x: auto;
   }
 }
@@ -138,7 +137,6 @@
     display: none;
   }
 }
-
 
 .col-2 {
   padding-left: 12px;
@@ -189,15 +187,12 @@
   flex-wrap: wrap;
   margin-right: -12px;
   margin-left: -12px;
-  width: 100%;
 }
 
 @media (max-width: 767px) {
   .row {
     margin-right: -12px;
     margin-left: -12px;
-    width: 100%;
-    margin: 0 auto;
   }
 
   .col-md-1 {
@@ -223,7 +218,8 @@
   }
 }
 
-@media (max-width: 576px) {}
+@media (max-width: 576px) {
+}
 
 .textp-l {
   font-size: 20px;

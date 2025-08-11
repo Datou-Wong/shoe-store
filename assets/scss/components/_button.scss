@@ -7,6 +7,11 @@
   cursor: pointer;
   border: none;
   background: transparent;
+  font-family: "Noto Sans TC", sans-serif;
+}
+.btn:disabled {
+  pointer-events: none; /* 禁止滑鼠事件 */
+  cursor: default;      /* 游標改回預設 */
 }
 @media (max-width: 767px) {
    .btn{

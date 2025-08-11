@@ -1,8 +1,8 @@
-.gary{
-    color: $neutral-600;
+.gary {
+  color: $neutral-600;
 }
-.green{
-    color: $primary-400;
+.green {
+  color: $primary-400;
 }
 .product-row {
   display: flex;
@@ -17,8 +17,8 @@
     margin: 0 auto;
   }
 }
-.bi-heart{
-    font-size: 24px;
+.bi-heart {
+  font-size: 24px;
 }
 .color img {
   width: 64px;
@@ -29,7 +29,10 @@
 }
 .btnProductSize {
   border: 1px solid $neutral-300;
-  width: 160px;
+  max-width: 160px;
+}
+.btnProductBlackSize {
+  max-width: 259px;
 }
 .click {
   border: 1px solid $neutral-900;
@@ -38,14 +41,9 @@
   color: #d74f4f;
 }
 .btn-white {
-  width: 259px;
+  max-width: 259px;
   border: 1px solid $neutral-900;
   font-weight: 500;
-}
-.btn-black {
-  width: 259px;
-  color: #ffffff;
-  background-color: black;
 }
 .exhaustive li p {
   font-size: 16px;
@@ -59,8 +57,19 @@
     padding-right: 0;
     padding-left: 0;
   }
-  .container.product-detail{
+  .container.product-detail {
     padding-right: 0;
     padding-left: 0;
+  }
+  .love-md-row {
+    flex-wrap: nowrap;
+    margin-left: -8px;
+    margin-right: -8px;
+  }
+
+   .love-md-col {
+    min-width: 316px;
+    padding-left: 8px;
+    padding-right: 8px;
   }
 }
